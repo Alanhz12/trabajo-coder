@@ -12,6 +12,7 @@ body{
 html{
     height: 100%;
 }
+
             /* inicio nav*/
 .header{
     background-color: rgba(146, 152, 156, 0.534);
@@ -53,6 +54,7 @@ html{
    font-family: none;
    
 }
+
             /* imagenes*/
 
 img{
@@ -81,6 +83,10 @@ transition: widht,height ;
     font-size:xx-large;
     font-family: none;
 }
+.img-section{
+    width: 500px;
+    height: 500px;
+}
 
 
 .articulos{
@@ -98,6 +104,9 @@ footer{
     margin:0 ;
     
 } 
+.footer-contactanos{
+    background-color: rgba(104, 104, 104, 0.973);
+}
 /* inicia seccion contactanos*/
 #contactanos{
     background-image: url( ../trabajo/inmagenes/fondo-contactanos.jpg);
@@ -140,7 +149,10 @@ footer{
 }
 
 /**/
-
+.nav-item{
+    text-decoration: none;
+    
+}
 .header{
     grid-area: header ;
 }
