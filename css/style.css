@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(./inmagenes/fondo-1.webp);
+  background-attachment: fixed;
+  font-family: 'Old Standard TT', serif;
+  min-height: 100%; }
+
+html {
+  height: 100%; }
+
+/* inicio nav*/
+.header {
+  background-color: rgba(146, 152, 156, 0.534);
+  height: 80px;
+  width: 100%; }
+
+.nav {
+  display: flex;
+  justify-content: space-between; }
+
+.nav-menu-link {
+  text-decoration: none;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 3px; }
+
+.nav-menu-link:hover {
+  background-color: rgba(0, 0, 0, 0.493);
+  transition: 0,5s; }
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 80px; }
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none; }
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  font-family: none; }
+
+/* imagenes*/
+img {
+  width: 250px;
+  height: 200px; }
+
+.img-c:hover {
+  width: 500px;
+  height: 500px; }
+
+.img-p {
+  width: 250px;
+  height: 200px; }
+
+.img-p:hover {
+  transform: scale(2); }
+
+.img-section1 {
+  width: 100%;
+  height: 400px; }
+
+.p-inicial {
+  text-align: center;
+  font-size: xx-large;
+  font-family: none; }
+
+.img-section {
+  width: 500px;
+  height: 500px; }
+
+.articulos {
+  display: inline-block;
+  text-align: center; }
+
+.precios {
+  background-color: rgba(125, 125, 126, 0.445); }
+
+.footer-p {
+  text-align: center; }
+
+footer {
+  background-color: rgba(104, 104, 104, 0.452);
+  margin: 0; }
+
+.footer-contactanos {
+  background-color: rgba(104, 104, 104, 0.973); }
+
+/* inicia seccion contactanos*/
+#contactanos {
+  background-image: url(../imagenes/fondo-contactanos.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; }
+
+#formulario {
+  background-color: rgba(144, 146, 148, 0.959);
+  width: 400px;
+  height: 450px;
+  padding-left: 50px; }
+
+.section-form {
+  display: grid;
+  place-content: center; }
+
+.ubicacion {
+  width: 10%;
+  height: 5%; }
+
+/* inicia seccion nosotros*/
+#nosotros {
+  background-image: url(../imagenes/fonodo-sobrenosotros.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; }
+
+.nosotros {
+  display: list-item;
+  text-align: center; }
+
+.sobreNosotros {
+  width: 500px;
+  height: auto; }
+
+/**/
+.nav-item {
+  text-decoration: none; }
+
+.header {
+  grid-area: header; }
+
+.section1 {
+  height: 500px;
+  grid-area: section1;
+  background-image: url(../imagenes/fondo-section1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  display: grid;
+  place-content: center; }
+
+.aside {
+  border-style: outset;
+  border-color: rgba(219, 215, 215, 0.719);
+  grid-area: aside;
+  display: grid;
+  place-content: center; }
+
+.titulo-h3 {
+  font-family: none;
+  font-size: 50px; }
+
+.div-productos {
+  border-style: outset;
+  border-color: rgba(219, 215, 215, 0.719);
+  grid-area: aside;
+  display: grid;
+  place-content: center; }
+
+.titulo-productos {
+  font-family: none;
+  font-size: 50px; }
+
+.section {
+  grid-area: section; }
+
+.footer {
+  grid-area: footer; }
+
+.grid-contenedor {
+  display: grid;
+  grid-template-areas: "header" "section1" "aside"   "section" "footer"; }
+
+@media (max-width: 440px) {
+  .grid-contenedor {
+    grid-template: "header" "section1" "aside"   "section" "footer"; }
+  .section1 {
+    display: none; }
+  .aside {
+    display: none; }
+  .header {
+    background-color: rgba(146, 152, 156, 0.534);
+    height: 60px;
+    width: 100%; }
+  .logo {
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 60px; }
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #797474;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%; }
+  .nav-menu-item {
+    line-height: 60px; }
+  .nav-menu-link:hover {
+    background-color: rgba(0, 0, 0, 0.493);
+    color: aliceblue; }
+  .section {
+    padding-inline-start: 100px;
+    padding-top: 300px; }
+  .section-form {
+    padding-top: 350px; }
+  .nosotros {
+    padding-top: 350px; }
+  .sobreNosotros {
+    width: 350px; }
+  .div-productos {
+    padding-top: 350px; } }

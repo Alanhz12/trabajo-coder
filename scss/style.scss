@@ -1,12 +1,25 @@
+@mixin backg () {
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center center;
+    background-size:cover;
+    
+}
+@mixin titles {
+    font-family: none;
+    font-size:50px ;
+    
+}
 *{
     margin: 0;
     box-sizing: border-box;
+
 }
 
 body{
     background-image:url(./inmagenes/fondo-1.webp )  ;
     background-attachment: fixed;
-     font-family: 'Gloria Hallelujah', cursive;;
+    font-family: 'Old Standard TT', serif;
      min-height: 100%;
 }
 html{
@@ -68,11 +81,11 @@ img{
 .img-p{
     width: 250px;
     height:200px ;
-transition: widht,height ;
+
 }
 .img-p:hover{
-    width: 300px;
-    height: 250px;
+    transform: scale(2);
+    
 }
 .img-section1{
     width: 100%;
@@ -109,11 +122,8 @@ footer{
 }
 /* inicia seccion contactanos*/
 #contactanos{
-    background-image: url( ../trabajo/inmagenes/fondo-contactanos.jpg);
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position: center center;
-    background-size:cover;
+    background-image: url( ../imagenes/fondo-contactanos.jpg);
+    @include backg ;
 }
 #formulario{
     background-color: rgba(144, 146, 148, 0.959);
@@ -133,11 +143,8 @@ footer{
 /* inicia seccion nosotros*/
 #nosotros{
     
-    background-image: url(../trabajo/inmagenes/fonodo-sobrenosotros.webp);
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position: center center;
-    background-size:cover;
+    background-image: url(../imagenes/fonodo-sobrenosotros.webp);
+    @include backg ;
 }
 .nosotros{
     display: list-item;
@@ -159,11 +166,8 @@ footer{
 .section1{
     height: 500px;
     grid-area: section1;
-    background-image:url(../trabajo/inmagenes/fondo-section1.jpg);
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position: center center;
-    background-size:cover;
+    background-image:url(../imagenes/fondo-section1.jpg);
+    @include backg ;
 display: grid;
 place-content: center;
 }
@@ -177,8 +181,7 @@ place-content: center;
   
 }
 .titulo-h3{
-    font-family: none;
-    font-size:50px ;
+    @include titles();
 }
 .div-productos{
     border-style:outset;
@@ -188,8 +191,7 @@ place-content: center;
     place-content: center;
 }
 .titulo-productos{
-    font-family: none;
-    font-size:50px ;
+   @include titles();
 }
 
 
