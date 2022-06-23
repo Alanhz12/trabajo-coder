@@ -172,8 +172,17 @@ footer {
   font-family: none;
   font-size: 50px; }
 
+.section2 {
+  padding-bottom: 10px;
+  padding: 10px; }
+
 .section {
-  grid-area: section; }
+  grid-area: section;
+  padding-left: 50px;
+  padding-top: 10px; }
+
+.section-registrate {
+  padding: 20px; }
 
 .footer {
   grid-area: footer; }
@@ -215,6 +224,8 @@ footer {
     padding-inline-start: 100px;
     padding-top: 300px; }
   .section-form {
+    padding-top: 350px; }
+  .section-registrate {
     padding-top: 350px; }
   .nosotros {
     padding-top: 350px; }
