@@ -48,10 +48,16 @@ html{
     transition: 0,5s;
 }
 .logo{
+    
     font-size: 40px;
     font-weight: bold;
     padding: 0 40px ;
     line-height: 80px;
+    
+}
+.link-logo{
+    text-decoration: none;
+    color: black;
 }
 .nav-menu{
     display: flex;
@@ -84,7 +90,7 @@ img{
 
 }
 .img-p:hover{
-    transform: scale(2);
+    transform: scale(1.4);
     
 }
 .img-section1{
@@ -100,7 +106,9 @@ img{
     width: 500px;
     height: 500px;
 }
-
+.img-platos{
+    height: 300px;
+}
 
 .articulos{
     display:inline-block;
@@ -138,7 +146,7 @@ footer{
 .ubicacion{
     width: 10%;
     height: 5%;
-   
+   padding-top: 25px;
 }
 /* inicia seccion nosotros*/
 #nosotros{
@@ -239,7 +247,7 @@ place-content: center;
             display: none;
         }
         .aside{
-            display: none;
+           padding-top: 300px;
         }
         .header{
             background-color: rgba(146, 152, 156, 0.534);
@@ -271,7 +279,7 @@ place-content: center;
         }
    .section{
        padding-inline-start: 100px;
-       padding-top: 300px;
+       padding-top: 100px;
    }
    .section-form{
     padding-top: 350px;

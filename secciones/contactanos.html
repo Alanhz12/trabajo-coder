@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"  content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="keywords"  content="contactanos,ingrasar,bazar,lina ah,email,nombre,Apellido ">
      <!-- CSS only -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--inicia hoja de estilos-->
@@ -22,7 +22,7 @@
 <body id="contactanos">
     <header class="header animate__animated animate__fadeInDown"> 
         <nav class="nav">
-         <h1 class="logo"> Lina ah</h1>
+            <h1 class="logo"> <a class="link-logo" href="../index.html">Lina AH</a></h1>
                 
                     <ul class="nav-menu">
                         <li class="nav-menu-item"> <a href="../index.html" class="nav-menu-link">Inicio</a></li>
@@ -38,16 +38,17 @@
     <section class="section-form">
       <div id="formulario">
         <form action="">
-            <h2>Envia tu mensaje </h2>
-            <label for="name">Nombre:</label>
-            <input type="text" name="name"required>
-            <br>
-            <label for="name">Apellido:</label>
-            <input type="text" name="name"required>
-            <br>
-            <label for="email">Mail:</label>
-            <input type="email" name="email"required>
-            <br>
+            <div>
+                <h2>Envia tu mensaje </h2>
+                <label for="name">Nombre:</label>
+                <input type="text" name="name"required>
+            </div>
+                <label for="name">Apellido:</label>
+                <input type="text" name="name"required>
+            <div>
+                <label for="email">Mail:</label>
+                <input type="email" name="email"required>
+            </div>
         <select name="paises" required>
                 <option value="opcion1">Argentina</option>
                 <option value="opcion2">Brasil</option>
@@ -57,20 +58,20 @@
                 <option value="opcion6">Bolivia</option>
                 <option value="opcion7">Paraguay</option>
         </select>
-            <br>
+            <div>
                 <label for="text">Hombre</label>
                 <input type="radio" name="hombre" id="" required>
-            <br>
+            </div>
                 <label for="text">Mujer</label>
                 <input type="radio" name="mujer" id=""required>
-            <br>
+            <div>
                <textarea name="text"  cols="30" rows="10" required></textarea>
-            <br>
                 <button type="submit">Enviar</button>
+            </div>
         </form>
       </div>
     </section>
-    <br>
+    
     <div class="ubicacion">
         <section>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.785731074426!2d-57.545371757145624!3d-38.0054580312662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc19b5a64d99%3A0x6034b83f25e6d0a2!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1651269788762!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -78,15 +79,15 @@
     </div>
     <footer class="footer-contactanos">
         <div class="container">
-           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hogar</font></font></a></li>
-             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Características</font></font></a></li>
-             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precios</font></font></a></li>
-             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">preguntas frecuentes</font></font></a></li>
-             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sobre</font></font></a></li>
-           </ul>
-           <p class="text-center text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2022 Lina AH, Inc.</font></font></p>
-       </div>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+              <li class="nav-item"><a href="productos.html" class="nav-link px-2 text-muted">Productos</a></li>
+              <li class="nav-item"><a href="registrate.html" class="nav-link px-2 text-muted">Registrate</a></li>
+              <li class="nav-item"><a href="nosotros.html" class="nav-link px-2 text-muted">Sobre Nosotros</a></li>
+              <li class="nav-item"><a href="contactanos.html" class="nav-link px-2 text-muted">Contactanos</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2022 Lina AH, Inc.</p>
+        </div>
      </footer>
        <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
